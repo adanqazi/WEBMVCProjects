@@ -1,0 +1,58 @@
+﻿@model QaziAdan.Models.Academy
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Academy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.owner_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.owner_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
